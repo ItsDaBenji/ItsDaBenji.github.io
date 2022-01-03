@@ -21,31 +21,57 @@
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
         }
         .navList
         {
-            background-color: cadetblue;
+            font-size:30px;
+            background-color:#5AB9EA;
             color:white;
-            border: 1px solid blue;
-            margin: 20px;
-            padding: 20px;
+            padding:40px;
+            text-decoration:none;
+            transition:0.1s;
+            margin:-15px;
+            flex-grow:1;
+            width: 100%;
+        }
+        .navList:hover
+        {
+            font-size:30px;
+            background-color:#59a3e0;
+            color:white;
+            padding:40px;
+            text-decoration:none;
+            transition:0.1s;
+            margin:-15px;
+            flex-grow:1;
+            width:100%;
+        }
+        .selectedNav
+        {
+            font-size:30px;
+            background-color:#5680E9;
+            color:white;
+            padding:40px;
+            margin:-15px;
+            flex-grow:1;
+            width:100%;
         }
 
     </style>
 
 </head>
 
-    <body style="background-image: url(Assets/Images/BungoV2.png); text-align:center; font-family:Arial, Helvetica, sans-serif">
+    <body>
 
-        <h1 style="size: 300%;"> ItsDaBenji </h1>
+        <img src="Assets/Images/LogoCentered.png" alt="Logo-Centered" style="width: 430px; height: 270px; margin: -20px;">
 
         <nav>
-            <ul style="list-style-type: none; align-content: center;">
-                <div style="display:flex; flex-direction:row;">
-                    <li><strong>Home</strong></li>
-                    <li><a href="about.html" class="navList" target="_self">About Us</a></li>
-                    <li><a href="projects.html" class="navList" target="_self">Projects</a></li>
-                </div>
+            <ul style="list-style-type: none; padding: 6px;">
+                <li style="float:left;" class="selectedNav"><strong>Home</strong></li>
+                <li style="float:left;"><a href="about.html" class="navList" target="_self">About Me</a></li>
+                <li style="float:left;"><a href="projects.html" class="navList" target="_self">Projects</a></li>
             </ul>
         </nav>
 

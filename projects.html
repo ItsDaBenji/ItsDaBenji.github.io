@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+    <title> ItsDaBenji </title>
+    <link rel="icon" type="Image" href="Assets/Images/BungoV2.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <base href="ItsDaBenji.github.io" target="_blank">
+
+    <style>
+
+        img
+        {
+            width: 100%;
+        }
+        body
+        {
+            background-image: url(Assets/Images/BungoV2.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .navList
+        {
+            font-size: 30px;
+            background-color: #5AB9EA;
+            color:white;
+            padding: 40px;
+            text-decoration: none;
+            transition: 0.1s;
+            margin: -5px;
+            display: flex;
+            float: left;
+        }
+        .navList:hover
+        {
+            font-size: 30px;
+            background-color: #59a3e0;
+            color:white;
+            padding: 40px;
+            text-decoration: none;
+            transition:0.1s;
+            margin: -5px;
+            display: flex;
+            float: left;
+        }
+        .selectedNav
+        {
+            font-size: 30px;
+            background-color: #5680E9;
+            color:white;
+            padding: 40px;
+            display: flex;
+            float: left;
+        }
+
+    </style>
+
+</head>
+
+    <body>
+
+        <img src="Assets/Images/LogoCentered.png" alt="Logo-Centered" style="width: 430px; height: 270px; margin: -20px;">
+
+        <nav>
+            <ul style="list-style-type: none; background-color: #5680E9; padding: 40px; margin-left: -8px; margin-right: -8px;">
+                <div style="display:flex; flex-direction:row; display:inline-block;">
+                    <li style="display:inline;"><a href="index.html" class="navList" target="_self">Home</a></li>
+                    <li style="display:inline;"><a href="about.html" class="navList" target="_self">About Me</a></li>
+                    <li style="display:inline;" class="selectedNav"><strong>Projects</strong></li>
+                </div>
+            </ul>
+        </nav>
+
+    </body>
+</html>
