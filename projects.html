@@ -17,46 +17,88 @@
         }
         body
         {
-            background-image: url(Assets/Images/BungoV2.png);
+            background-image: url("Assets/Images/Background.png");
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
             text-align: center;
             font-family: Arial, Helvetica, sans-serif;
+            overflow-x: hidden;
         }
-        .navList
+        ul
         {
-            font-size: 30px;
-            background-color: #5AB9EA;
+            background-color:#3566e0;
+            margin-right: -10px;
+            margin-left: -10px;
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            flex-grow: 1;
+        }
+        li
+        {
+            font-size: 20px;
+            display: inline-block;
             color:white;
-            padding: 40px;
-            text-decoration: none;
+            text-align: center;
+            text-shadow:2px 2px 0 #3566e0;
+            font-family: cursive;
+        }
+        li a
+        {
+            display: inline-block;
+            color:white;
+            text-align:center;
+            text-decoration:none;
+            background-color:#5AB9EA;
+            padding: 22px;
             transition: 0.1s;
-            margin: -5px;
-            display: flex;
-            float: left;
         }
-        .navList:hover
+        li a:hover
         {
-            font-size: 30px;
-            background-color: #59a3e0;
-            color:white;
-            padding: 40px;
-            text-decoration: none;
-            transition:0.1s;
-            margin: -5px;
-            display: flex;
-            float: left;
+            background-color:#59a3e0;
+            transition: 0.1s;
         }
-        .selectedNav
+
+        dd
         {
-            font-size: 30px;
-            background-color: #5680E9;
             color:white;
-            padding: 40px;
-            display: flex;
-            float: left;
+            font-size: 24px;
+            font-family: cursive;
+            line-break: 5;
+            width: 400px;
+            background-color:#5AB9EA;
+            border-radius: 20px;
+            display: block;
+            padding:20px;
+            margin-right:auto;
+            margin-left:auto;
+            text-shadow: 2px 2px 0 #3566e0;
         }
+        hr
+        {
+            border:1px dashed black;
+        }
+
+        .projectIcon
+        {
+            width: 320px;
+            height: 180px;
+            transform: scale(1);
+            border: 5px solid #5AB9EA;
+            border-radius: 5px;
+            display:block;
+            margin-right: auto;
+            margin-left: auto;
+            transition: 0.1s;
+        }
+        .projectIcon:hover
+        {
+            box-shadow: 0 0 5px 5px #3566e0;
+            transform: scale(1.05);
+            transition: 0.1s;
+        }
+        
 
     </style>
 
@@ -64,17 +106,36 @@
 
     <body>
 
-        <img src="Assets/Images/LogoCentered.png" alt="Logo-Centered" style="width: 430px; height: 270px; margin: -20px;">
+        <img src="Assets/Images/WebsiteBanner.png" alt="Logo-Centered" style="width: 1920px; margin-top:-10px; margin-bottom: -20px; margin-left:-10px">
 
         <nav>
-            <ul style="list-style-type: none; background-color: #5680E9; padding: 40px; margin-left: -8px; margin-right: -8px;">
+            <ul>
                 <div style="display:flex; flex-direction:row; display:inline-block;">
-                    <li style="display:inline;"><a href="index.html" class="navList" target="_self">Home</a></li>
-                    <li style="display:inline;"><a href="about.html" class="navList" target="_self">About Me</a></li>
-                    <li style="display:inline;" class="selectedNav"><strong>Projects</strong></li>
+                    <li><a href="index.html" target="_self">Home</a></li>
+                    <li style="padding: 22px;"><strong>Projects</strong></li>
+                    <li><a href="youtube.html" target="_self">YouTube</a></li>
+                    <li><a href="about.html" target="_self">About Me</a></li>
                 </div>
             </ul>
         </nav>
+
+
+        <dl>
+            <dt class="projectIcon"><a href="https://store.steampowered.com/app/1626010/The_Kings_Cards/" target="_blank"><img src="Assets/Images/TheKingsCardsScreenshot1.png"></a></dt>
+            <br>
+            <dd>A deck building roguelike where you travel through random levels and fight monsters with cards!</dd>
+            <hr>
+            <dt class="projectIcon"><a href="https://itsdabenji.itch.io/idle-crafter" target="_blank"><img src="Assets/Images/IdleCrafterScreenshot1.png"></a></dt>
+            <br>
+            <dd>A small Idle game about collected resources and crafting things!</dd>
+            <hr>
+            <dt class="projectIcon"><a href="https://itsdabenji.itch.io/arer" target="_blank"><img src="Assets/Images/A.R.E.RScreenshot1.png"></a></dt>
+            <br>
+            <dd>A game made for the Global Game Jam by the DET students at Abilene Christian University!</dd>
+            <hr>
+        </dl>
+
+
 
     </body>
 </html>

@@ -59,16 +59,35 @@
             background-color:#59a3e0;
             transition: 0.1s;
         }
-        h1
+        p
         {
+            color:white;
+            font-size: 30px;
+            font-family:cursive;
+            width: 500px;
             background-color:#5AB9EA;
-            border-radius: 400px;
+            text-shadow:2px 2px 0 #3566e0;
+            border-radius: 20px;
             display: block;
             padding:20px;
-            color:white;
-            font-family: cursive;
-            font-size: 50px;
-            text-shadow:2px 2px 0 #3566e0;
+            margin-right: auto;
+            margin-left: auto;
+            line-height: 40px;
+        }
+        .projectIcon
+        {
+            width: 500px;
+            transform: scale(1);
+            display:block;
+            margin-right: auto;
+            margin-left: auto;
+            transition: 0.1s;
+        }
+        .projectIcon:hover
+        {
+            box-shadow: 0 0 5px 5px #3566e0;
+            transform: scale(1.05);
+            transition: 0.1s;
         }
 
     </style>
@@ -82,18 +101,19 @@
         <nav>
             <ul>
                 <div style="display:flex; flex-direction:row; display:inline-block;">
-                    <li style="padding: 22px;"><strong>Home</strong></li>
+                    <li><a href="index.html" target="_self">Home</a></li>
                     <li><a href="projects.html" target="_self">Projects</a></li>
-                    <li><a href="youtube.html" target="_self">YouTube</a></li>
+                    <li style="padding: 22px;"><strong>YouTube</strong></li>
                     <li><a href="about.html" target="_self">About Me</a></li>
                 </div>
             </ul>
         </nav>
 
 
-        <img src="Assets/Images/Excited Avatar.png" style="width: 450px; height: 450; margin-top:-100px">
-        <h1>What's up guys! It's da Benji</h1>
+        <a href="https://www.youtube.com/channel/UCMQ4oo-7ECFHw4SWWUwVbsg"><img src="Assets/Images/YoutubeLogo.png" alt="YouTube Logo" class="projectIcon"></a>
 
+
+        <p>Check out my YouTube Channel, where I upload devlogs about my projects, large and small</p>
 
     </body>
 </html>
