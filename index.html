@@ -32,23 +32,27 @@
             margin-left: -10px;
             list-style-type: none;
             display: flex;
-            flex-direction: row;
-            flex-grow: 1;
+            flex-wrap: wrap;
+            text-align: center;
         }
         li
         {
             font-size: 20px;
-            display: inline-block;
+            display: flex;
+            flex-direction: left;
+            flex: 25%;
             color:white;
-            text-align: center;
             text-shadow:2px 2px 0 #3566e0;
             font-family: cursive;
         }
         li a
         {
-            display: inline-block;
+            display: flex;
+            flex: 25%;
+            flex-direction: left;
+            width: max-content;
+            position: relative;
             color:white;
-            text-align:center;
             text-decoration:none;
             background-color:#5AB9EA;
             padding: 22px;
@@ -58,6 +62,47 @@
         {
             background-color:#59a3e0;
             transition: 0.1s;
+        }
+        .flex-container 
+        {
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 30px;
+            text-align: center;
+        }
+        .flex-item
+        {
+            transition:0.1s;
+            background-color:#5AB9EA;
+            padding: 0px;
+            flex: 25%;
+        }
+        .flex-item a
+        {
+            transition:0.1s;
+            background-color:#052f44;
+            padding: 0px;
+        }
+        .flex-item a:hover
+        {
+            transition:0.1s;
+            background-color:#59a3e0;
+        }
+
+        .grid-container 
+        {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            background-color: #2196F3;
+            padding: 10px;
+        }
+        .grid-item 
+        {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
         }
         h1
         {
@@ -71,6 +116,7 @@
             text-shadow:2px 2px 0 #3566e0;
         }
 
+
     </style>
 
 </head>
@@ -79,7 +125,7 @@
 
         <img src="Assets/Images/WebsiteBanner.png" alt="Logo-Centered" style="width: 1920px; margin-top:-10px; margin-bottom: -20px; margin-left:-10px">
 
-        <nav>
+        <!--<nav>
             <ul>
                 <div style="display:flex; flex-direction:row; display:inline-block;">
                     <li style="padding: 22px;"><strong>Home</strong></li>
@@ -88,6 +134,15 @@
                     <li><a href="about.html" target="_self">About Me</a></li>
                 </div>
             </ul>
+        </nav>-->
+
+        <nav>
+            <div class="grid-container">
+                <div class="grid-item"; style="background-color: #59a3e0;"><strong>Home</strong></div>
+                <a href="projects.html" target="_self" class="grid-item">Projects</a>
+                <a href="youtube.html" target="_self" class="grid-item">YouTube</a>
+                <a href="about.html" target="_self" class="grid-item">About Me</a>
+            </div>
         </nav>
 
 
