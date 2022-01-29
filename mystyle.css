@@ -1,0 +1,126 @@
+body
+{
+    background-image: url("Assets/Images/Background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+img
+{
+    width: 100%;
+}
+
+h1
+{
+    background-color:#5AB9EA;
+    border-radius: 400px;
+    display: block;
+    padding:20px;
+    color:white;
+    font-family: cursive;
+    font-size: 50px;
+    text-shadow:2px 2px 0 #3566e0;
+}
+
+p
+{
+    color:white;
+    font-size: 30px;
+    font-family:cursive;
+    width: 500px;
+    background-color:#5AB9EA;
+    text-shadow:2px 2px 0 #3566e0;
+    border-radius: 20px;
+    display: block;
+    padding:20px;
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 40px;
+}
+
+.projectIcon
+{
+    width: 500px;
+    transform: scale(1);
+    display:block;
+    margin-right: auto;
+    margin-left: auto;
+    transition: 0.1s;
+}
+
+.projectIcon:hover
+{
+    box-shadow: 0 0 5px 5px #3566e0;
+    transform: scale(1.05);
+    transition: 0.1s;
+}
+
+ul
+{
+    background-color:#3566e0;
+    margin-right: -10px;
+    margin-left: -10px;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+li
+{
+    font-size: 20px;
+    display: flex;
+    flex-direction: left;
+    flex: 100%;
+    color:white;
+    text-shadow:2px 2px 0 #3566e0;
+    font-family: cursive;
+}
+
+li a
+{
+    display: flex;
+    flex: 100%;
+    flex-direction: left;
+    width: max-content;
+    position: relative;
+    color:white;
+    text-decoration:none;
+    background-color:#5AB9EA;
+    padding: 22px;
+    transition: 0.1s;
+}
+
+li a:hover
+{
+    background-color:#59a3e0;
+    transition: 0.1s;
+}
+
+.grid-container 
+{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    align-items: stretch;
+}
+
+.grid-item 
+{
+    transition: 0.1s;
+    background-color: #5AB9EA;
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;
+    align-items: stretch;
+    display: flex;
+}
+
+.grid-item:hover
+{
+    transition: 0.1s;
+    background-color: #2196F3;
+}
