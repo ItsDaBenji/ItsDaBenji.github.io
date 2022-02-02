@@ -77,6 +77,18 @@ p
     line-height: 40px;
 }
 
+a p
+{
+    transition: 0.1s;
+    background-color: #3469a2;
+}
+
+a p:hover
+{
+    transition: 0.1s;
+    background-color: #213e85;
+}
+
 .projectIcon
 {
     width: 500px;
