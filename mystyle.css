@@ -1,3 +1,20 @@
+@media screen and (max-width: 600px)
+{
+    body
+    {
+        background-color: red;
+    }
+}
+
+@media screen and (min-width: 100px) 
+{
+    body
+    {
+        background-color: blue;
+    }    
+}
+
+
 body
 {
     /*background-image: url("Assets/Images/Background.png");
@@ -14,11 +31,10 @@ body
 .introduction
 {
     display: flex;
-    height: max(40vh);
-    width: 80%;
+    height: max(20vh);
+    width: 100%;
     margin: auto;
     align-items: center;
-    background-color: rgb(255, 255, 255);
     background-image: linear-gradient(rgb(255, 255, 255), rgb(144, 234, 233));
 }
 
