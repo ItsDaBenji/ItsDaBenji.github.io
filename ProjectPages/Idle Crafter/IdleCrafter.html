@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Idle Crafting Game</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+  </head>
+  <body>
+    <div id="unity-container" class="unity-desktop">
+      <canvas id="unity-canvas"></canvas>
+      <div id="unity-loading-bar">
+        <div id="unity-logo"></div>
+        <div id="unity-progress-bar-empty">
+          <div id="unity-progress-bar-full"></div>
+        </div>
+      </div>
+      <div id="unity-mobile-warning">
+        WebGL builds are not supported on mobile devices.
+      </div>
+      <div id="unity-footer">
+        <div id="unity-webgl-logo"></div>
+        <div id="unity-fullscreen-button"></div>
+        <div id="unity-build-title">Idle Crafting Game</div>
+      </div>
+    </div>
+    <script>
+      var buildUrl = "Build";
+      var loaderUrl = buildUrl + "/BUILDV2.loader.js";
+      var config = {
+        dataUrl: buildUrl + "/BUILDV2.data.gz",
+        frameworkUrl: buildUrl + "/BUILDV2.framework.js.gz",
+        codeUrl: buildUrl + "/BUILDV2.wasm.gz",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "Idle Crafting Game",
+        productVersion: "0.1",
+      };
+
+      var container = document.querySelector("#unity-container");
+      var canvas = document.querySelector("#unity-canvas");
+      var loadingBar = document.querySelector("#unity-loading-bar");
+      var progressBarFull = document.querySelector("#unity-progress-bar-full");
+      var fullscreenButton = document.querySelector("#unity-fullscreen-button");
+      var mobileWarning = document.querySelector("#unity-mobile-warning");
+
+      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        container.className = "unity-mobile";
+        config.devicePixelRatio = 1;
+        mobileWarning.style.display = "block";
+        setTimeout(() => {
+          mobileWarning.style.display = "none";
+        }, 5000);
+      } else {
+        canvas.style.width = "960px";
+        canvas.style.height = "600px";
+      }
+      loadingBar.style.display = "block";
+
+      var script = document.createElement("script");
+      script.src = loaderUrl;
+      script.onload = () => {
+        createUnityInstance(canvas, config, (progress) => {
+          progressBarFull.style.width = 100 * progress + "%";
+        }).then((unityInstance) => {
+          loadingBar.style.display = "none";
+          fullscreenButton.onclick = () => {
+            unityInstance.SetFullscreen(1);
+          };
+        }).catch((message) => {
+          alert(message);
+        });
+      };
+      document.body.appendChild(script);
+    </script>
+  </body>
+</html>
+
+
+
+<!--<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+    <title> ItsDaBenji </title>
+    <link rel="icon" type="Image" href="../Assets/Images/BungoV2.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <base href="ItsDaBenji.github.io" target="_blank">
+
+    <link rel="stylesheet" href="../mystyle.css">
+
+</head>
+
+    <body>
+        <img src="../Assets/Images/WebsiteBanner.png" alt="Logo-Centered" style="width: 1920px; margin-top:-10px; margin-bottom: -20px; margin-left:-10px">
+        <nav>
+            <div class="grid-container">
+                <a href="../index.html" target="_self" class="grid-item">Home</a>
+                <a href="../projects.html" target="_self" class="grid-item">Projects</a>
+                <a href="../links.html" target="_self" class="grid-item">Links</a>
+                <a href="../about.html" target="_self" class="grid-item">About Me</a>
+            </div>
+        </nav>
+        <a href="../projects.html" target="_self" style="text-decoration:none; display: block;"><p><- Back To Projects</p></a>
+
+        <p>Idle Crafter is a small game about collecting resources and crafting new things out of them!</p>
+
+        <img src="../Assets/Images/IdleCrafterScreenshot1.png" alt="IdleCrafterScreenshot1" style="max-width: 50%;">
+
+        <p>Craft tools to collect resources faster and harvest different materials</p>
+
+        <img src="../Assets/Images/IdleCrafterScreenshot2.png" alt="IdleCrafterScreenshot2" style="max-width: 50%;">
+
+        <p>Try to reach the diamond at the end! Can you figure out how to make it?</p>
+
+        <img src="../Assets/Images/IdleCrafterScreenshot3.png" alt="IdleCrafterScreenshot3" style="max-width: 50%;">
+
+    </body>
+</html>-->
