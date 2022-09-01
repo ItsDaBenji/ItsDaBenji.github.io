@@ -4,13 +4,19 @@
     {
         background-color: white;
     }    
+
+    .logo
+    {
+        width: 50vh;
+        margin: auto;
+    }
     
     .introduction
     {
         display: flex;
         height: min(20vh);
-        width: 100%;
-        margin: auto;
+        width: 1980px;
+        margin: -20px;
         align-items: center;
         background-image: linear-gradient(rgb(255, 255, 255), rgb(144, 234, 233));
     }
@@ -28,6 +34,108 @@
         text-align:center;
         width: 75%;
         padding: 10%;
+    }
+
+    .body
+    {
+        background-color:rgb(144, 234, 233);
+        height: 100vh;
+        width: 1980px;
+        margin: -20px;
+    }
+
+    .section-label
+    {
+        padding-left: 40px;
+        margin-bottom: -10px;
+        font-size: larger;
+    }
+
+    .section-divider
+    {
+        border-radius: 100%; 
+        margin-left: -200px;
+        width: 35%; 
+        float: left
+    }
+
+    .project-container
+    {
+        display: grid;
+        grid-template-columns: repeat(2, 25%);
+        margin: auto;
+        gap: 7vw;
+        justify-items: stretch;
+    }
+
+    .project-icon
+    {
+        margin-top: 4vh;
+        display: inline;
+        position: relative;
+        width: 400px;
+        height: 225px;
+        transition: 0.1s;
+    }
+
+    .project-label
+    {
+        position:absolute;
+        display:inline-block;
+        background-color: rgba(195, 195, 195, 0.5);
+        top:0;
+        left:0;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        border-radius: 0;
+        text-align: center;
+        opacity: 0;
+    }
+
+    .label-text
+    {
+        position: relative;
+        font-size: xx-large;
+        top: 25%;
+        color: white;
+        text-shadow: 2px 2px black;
+    }
+
+    .project-icon:hover .project-label
+    {
+        opacity: 1;
+        transition: 0.3s;
+    }
+
+    .footer
+    {
+        display: block;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        text-align: center;
+    }
+
+    .sites
+    {
+        display: grid;
+        grid-template-columns: repeat(5, 8%);
+        align-items: center;
+        align-self: center;
+        justify-content: center;
+        margin: auto;
+        padding: 3px;
+    }
+
+    .site-logo
+    {
+        display: block;
+        width: 75%;
+        height: 75%;
+        border-radius: 25%;
     }
 }
 
