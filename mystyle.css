@@ -50,6 +50,7 @@
 
     .body
     {
+        display: block;
         background-color:rgb(144, 234, 233);
         height: 150vh;
         width: 1980px;
