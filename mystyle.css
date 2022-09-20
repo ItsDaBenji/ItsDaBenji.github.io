@@ -176,6 +176,87 @@
         height: 65%;
         transition: 0.2s;
     }
+
+    #slideshow 
+    {
+        overflow: hidden;
+        height: 563px;
+        width: 1000px;
+        margin: 0 auto;
+    }
+       
+      /* Style each of the sides
+      with a fixed width and height */
+    .slide 
+    {
+    float: left;
+    height: 563px;
+    width: 1000px;
+    }
+       
+    /* Add animation to the slides */
+    .slide-wrapper 
+    {
+        
+        /* Calculate the total width on the
+        basis of number of slides */
+        width: calc(1000px * 4);
+        
+        /* Specify the animation with the
+        duration and speed */
+        animation: slide 10s ease infinite;
+    }
+    
+    /* Set the background color
+    of each of the slides */
+    .slide:nth-child(1) 
+    {
+        background: green;
+    }
+    
+    .slide:nth-child(2) 
+    {
+        background: pink;
+    }
+    
+    .slide:nth-child(3) 
+    {
+        background: red;
+    }
+    
+    /* Define the animation
+    for the slideshow */
+    @keyframes slide 
+    {
+        
+        /* Calculate the margin-left for
+        each of the slides */
+        20% 
+        {
+            margin-left: 0px;
+        }
+        
+        30% 
+        {
+            margin-left: calc(-1000px * 1);
+        }
+
+        60%
+        {
+            margin-left: calc(-1000px * 1);
+        }
+        
+        70% 
+        {
+            margin-left: calc(-1000px * 2);
+        }
+
+        100% 
+        {
+            margin-left: calc(-1000px * 2);
+        }
+        
+    }
 }
 
 @media screen and (max-width: 600px) /* FOR PHONES*/
