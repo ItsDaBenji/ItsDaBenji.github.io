@@ -2,149 +2,324 @@
 
 <html lang="en-US">
 
-<head>
-    <title> ItsDaBenji </title>
-    <link rel="icon" type="Image" href="Assets/Images/BungoV2.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <title> ItsDaBenji </title>
+        <link rel="icon" type="Image" href="Assets/Images/BungoV2.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <base href="ItsDaBenji.github.io" target="_blank">
+        <base href="ItsDaBenji.github.io" target="_blank">
 
-    <link rel="stylesheet" href="mystyle.css">
+        <link rel="stylesheet" href="mystyle.css">
+        <script src="index.js"></script>
 
-</head>
-
+    </head>
     <body>
 
-         <!-- Define the slideshow container -->
-    <div id="slideshow">
-        <div class="slide-wrapper">
-             
-        <!-- Define each of the slides
-         and write the content -->
-          
-            <div class="slide">
-                <a href="ProjectPages/IdleCrafter/IdleCrafter.html">
-                    <img src="Assets/Images/IdleCrafterScreenshot3.png">
-                    <div class="slide-label">
-                        <p class="label-text">Idle Crafter</p>
-                        <p class="label-text">2020</p>
-                    </div>
-                </a>
-            </div>
-            <div class="slide">
-                <a href="https://store.steampowered.com/app/1626010/The_Kings_Cards/">
-                    <img src="Assets/Images/TheKingsCardsScreenshot4.png", class="slide">
-                    <div class="slide-label">
-                        <p class="label-text">The King's Cards</p>
-                        <p class="label-text">2021</p>
-                    </div>
-                </a>
-            </div>
-            <div class="slide">
-                <a href="https://itsdabenji.itch.io/the-land-of-yx">
-                    <img src="Assets/Images/YXScreenshot2.png", class="slide">
-                    <div class="slide-label">
-                        <p class="label-text">The Land of Yx</p>
-                        <p class="label-text">2022</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
+        <img src="Assets/Logos/GodotLogo.png" class="logos godot-logo">
+        <img src="Assets/Logos/AsepriteLogo.png" class="logos aseprite-logo">
+        <img src="Assets/Logos/UnityLogo.png" class="logos unity-logo">
+        <img src="Assets/Logos/BlenderLogo.png" class="logos blender-logo">
 
-        <div class="logo">
-            <img src="Assets/Logos/LogoAlphaV2.png">
-        </div>
-
-        <div class="introduction">
-
-            <div class="name">
-                <h1 style="float: left; position: relative; display: inline; width: 40%; justify-content: center; ">ItsDaBenji</h1>
-                <div class="intro-image">
-                    <img src="Assets/Images/Ben.png", style="position:static;transform: translate(10px, 0px);">
-                    <p style="position:relative;font-size: medium; text-align: center; transform: translate(0px, -30px);">Pixel art logo was made by Lauren Najera. Check her Artstation out <a href="https://www.artstation.com/despacita21">here!</a></p>
-                </div>
-            </div>
-
-            <div class="bio">
-                <p> My name is Benjamin, and I am an indie game developer. 
-                    I specialize in programming, but have experience in pixel art, project management, 
-                    and team management. I graduated from Abilene Christian University majoring in
-                    Digital Entertainment Technology.
-                </p>
-            </div>
-        </div>
-
-        <div class="body">
-
-            <div style="height: 20px;"></div>
-
-            <h1 class="area-header">Projects</h1>
-
-            <hr class="area-divider">
-
-            <p class="section-label">In Browser Games</p>
-            <hr class="section-divider">
-            
-            <div class="project-container">
-                <div class="project-icon">
-                    <a href="ProjectPages/IdleCrafter/IdleCrafter.html" target="_self"><img src="Assets/Images/IdleCrafterScreenshot1.png"></a>
-                    <div class="project-label">
-                        <p class="label-text">Idle Crafter</p>
-                        <p class="label-text">2020</p>
-                    </div>
-                </div>
-            </div>
-
-            <p class="section-label">Other Games</p>
-            <hr class="section-divider">
-            <div class="project-container">
-                <div class="project-icon">
-                    <a href="https://store.steampowered.com/app/1626010/The_Kings_Cards/" target="_blank"><img src="Assets/Images/TheKingsCardsScreenshot1.png"></a>
-                    <div class="project-label">
-                        <p class="label-text">The King's Cards</p>
-                        <p class="label-text">2021</p>
-                    </div>
-                </div>
-            
-                <div class="project-icon">
-                    <a href="https://itsdabenji.itch.io/the-land-of-yx" target="_blank"><img src="Assets/Images/ItchTitleCardCropped.png"></a>
-                    <div class="project-label">
-                        <p class="label-text">The Land of Yx</p>
-                        <p class="label-text">2022</p>
-                    </div>
-                </div>
-            </div>
-            <!-- <p class="section-label">Other Apps</p>
-            <hr class="section-divider">
-            <div class="project-container"> -->
-                
-            </div>
-        </div>
-
-        <!-- <hr class="area-divider"> -->
+        <div id="interface_mode">
+            <button> Switch </button>
+        </div> <!-- Interface Mode -->
         
-        <div class="outro">
+        
+        <div class="content">
+            <div class="slide-show"> <!--TODO: Replace slideshow with demo reel-->
+                <div class="slide-wrapper">
+                    <div class="slide">
+                        <a href="ProjectPages/IdleCrafter/IdleCrafter.html">
+                            <img src="Assets/Images/IdleCrafterScreenshot3.png">
+                            <div class="slide-label">
+                                <p class="label-text">Idle Crafter</p>
+                                <p class="label-text">2020</p>
+                            </div> 
+                        </a>
+                    </div>
+                    
+                    <div class="slide">
+                        <a href="https://store.steampowered.com/app/1626010/The_Kings_Cards/">
+                        <img src="Assets/Images/TheKingsCardsScreenshot4.png", class="slide">
+                            <div class="slide-label">
+                                <p class="label-text">The King's Cards</p>
+                                <p class="label-text">2021</p>
+                            </div>
+                        </a>
+                    </div>
 
-            <div class="footer">
+                    <div class="slide">
+                        <a href="https://itsdabenji.itch.io/the-land-of-yx">
+                            <img src="Assets/Images/YXScreenshot2.png", class="slide">
+                            <div class="slide-label">
+                                <p class="label-text">The Land of Yx</p>
+                                <p class="label-text">2022</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div> <!-- Slide Show -->
 
-                <p style="font-size: large">Check me out on my various sites</p>
-                <div class="sites">
+            <div class="clr"></div>
+            
+            <div class="introduction">
+                <div class="profile">
+                    <div class="image_box">
+                        <img src="Assets/Images/Ben_Bounce.gif" class="intro-image">
+                    </div>
+                    <div class="image-credit">
+                        <p>
+                            Pixel art logo was made by Lauren Najera. 
+                            Check her Artstation out 
+                            <a href="https://www.artstation.com/despacita21" class="credit-link">here!</a>
+                        </p>
+                    </div>
+                </div>
+                <img src="Assets/Logos/LogoAlphaV2.png" class="logo">
+                <div class="bio">
+                    <p>My name is Benjamin, and I am an indie game developer. 
+                        I specialize in programming in the Godot and Unity game engines. I also have experience with
+                        project and team management. I graduated from Abilene Christian University with a degree in 
+                        Digital Entertainment Technology.
+                    </p>
+                </div>
+            </div>
 
-                    <a href="https://itsdabenji.itch.io/" target="_blank"><img class="site-logo" src="Assets/Logos/Itch.IO.jpg"></a>
-                    <a href= "https://www.youtube.com/channel/UCMQ4oo-7ECFHw4SWWUwVbsg" target="_blank"><img class="site-logo" src="Assets/Logos/YoutubeLogo.png"></a>
-                    <a href="https://www.artstation.com/itsdaschoolbenji" target="_blank"><img class="site-logo" src="Assets/Logos/ArtStationLogo.png"></a>
+            <div class="clr"></div>
+
+            <div class="projects">
+
+                <p class="projects-label">In Browser Projects</p>
+                <hr>
+                <div class="project_list">
+                    <div class="project-icon">
+                        <a href="Main">
+                            <img src="Assets/Images/IdleCrafterScreenshot.png" class="project-icon">
+                            <div class="project_label">
+                                <p>Idle Crafter</p>
+                                <p>2020</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <p class="projects-label">Other Games</p>
+                <hr>
+                <div class="project_list">
+                    <div class="project-icon">
+                        <a href="Main">
+                            <img src="Assets/Images/TheKingsCardsScreenshot1.png" class="project-icon">
+                            <div class="project_label">
+                                <p>The King's Cards</p>
+                                <p>2021</p>
+                            </div>
+                        </a>
+                    </div>
+                    </a>
+                    <div class="project-icon">
+                        <a href="Main">
+                            <img src="Assets/Images/YXScreenshot1.png" class="project-icon">
+                            <div class="project_label">
+                                <p>The Land of Yx</p>
+                                <p>2022</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project_list"></div>
+            </div> <!-- Projects -->
+
+            <div class="conclusion">
+
+                <div class="site-intro">
                     
                 </div>
-                <p style="font-size: large">For business inquires, please email <a href = "mailto: itsdabenji@gmail.com">ItsDaBenji@gmail.com</a></p>
 
+                <div class="site-grid">
+
+                    <div class="site">
+                        
+                    </div>
+
+                    <div class="site">
+                        
+                    </div>
+
+                    <div class="site">
+
+                    </div>
+
+                </div>
+
+                <div class="email">
+
+                </div>
+
+            </div> <!-- Conclusion -->
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+            <!-- <div id="slideshow">
+                <div class="slide-wrapper">
+        
+                
+                    <div class="slide">
+                        <a href="ProjectPages/IdleCrafter/IdleCrafter.html">
+                            <img src="Assets/Images/IdleCrafterScreenshot3.png">
+                            <div class="slide-label">
+                                <p class="label-text">Idle Crafter</p>
+                                <p class="label-text">2020</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="https://store.steampowered.com/app/1626010/The_Kings_Cards/">
+                            <img src="Assets/Images/TheKingsCardsScreenshot4.png", class="slide">
+                            <div class="slide-label">
+                                <p class="label-text">The King's Cards</p>
+                                <p class="label-text">2021</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="https://itsdabenji.itch.io/the-land-of-yx">
+                            <img src="Assets/Images/YXScreenshot2.png", class="slide">
+                            <div class="slide-label">
+                                <p class="label-text">The Land of Yx</p>
+                                <p class="label-text">2022</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- <div class="logo">
+                <img src="Assets/Logos/LogoAlphaV2.png">
             </div>
+
+            <div class="introduction">
+
+                <div class="name">
+                    <h1 style="float: left; position: relative; display: inline; width: 40%; justify-content: center; ">ItsDaBenji</h1>
+                    <div class="intro-image">
+                        <img src="Assets/Images/Ben.png", style="position:static;transform: translate(10px, 0px);">
+                        <p style="position:relative;font-size: medium; text-align: center; transform: translate(0px, -30px);">Pixel art logo was made by Lauren Najera. Check her Artstation out <a href="https://www.artstation.com/despacita21">here!</a></p>
+                    </div>
+                </div>
+
+                <div class="bio">
+                    <p> My name is Benjamin, and I am an indie game developer. 
+                        I specialize in programming, but have experience in pixel art, project management, 
+                        and team management. I graduated from Abilene Christian University majoring in
+                        Digital Entertainment Technology.
+                    </p>
+                </div>
+            </div> -->
+
+            <!--<div class="body">
+
+                <div style="height: 20px;"></div>
+
+                <h1 class="area-header">Projects</h1>
+
+                <hr class="area-divider">
+
+                <p class="section-label">In Browser Games</p>
+                <hr class="section-divider">
+                
+                <div class="project-container">
+                    <div class="project-icon">
+                        <a href="ProjectPages/IdleCrafter/IdleCrafter.html" target="_self"><img src="Assets/Images/IdleCrafterScreenshot1.png"></a>
+                        <div class="project-label">
+                            <p class="label-text">Idle Crafter</p>
+                            <p class="label-text">2020</p>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="section-label">Other Games</p>
+                <hr class="section-divider">
+                <div class="project-container">
+                    <div class="project-icon">
+                        <a href="https://store.steampowered.com/app/1626010/The_Kings_Cards/" target="_blank"><img src="Assets/Images/TheKingsCardsScreenshot1.png"></a>
+                        <div class="project-label">
+                            <p class="label-text">The King's Cards</p>
+                            <p class="label-text">2021</p>
+                        </div>
+                    </div>
+                
+                    <div class="project-icon">
+                        <a href="https://itsdabenji.itch.io/the-land-of-yx" target="_blank"><img src="Assets/Images/ItchTitleCardCropped.png"></a>
+                        <div class="project-label">
+                            <p class="label-text">The Land of Yx</p>
+                            <p class="label-text">2022</p>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <p class="section-label">Other Apps</p>
+                <hr class="section-divider">
+                <div class="project-container"> -->
+                    
+                <!-- </div>
+            </div>  -->
+
+            <!-- <hr class="area-divider"> -->
+            
+            <!-- <div class="outro">
+
+                <div class="footer">
+
+                    <p style="font-size: large">Check me out on my various sites</p>
+                    <div class="sites">
+
+                        <a href="https://itsdabenji.itch.io/" target="_blank"><img class="site-logo" src="Assets/Logos/Itch.IO.jpg"></a>
+                        <a href= "https://www.youtube.com/channel/UCMQ4oo-7ECFHw4SWWUwVbsg" target="_blank"><img class="site-logo" src="Assets/Logos/YoutubeLogo.png"></a>
+                        <a href="https://www.artstation.com/itsdaschoolbenji" target="_blank"><img class="site-logo" src="Assets/Logos/ArtStationLogo.png"></a>
+                        
+                    </div>
+                    <p style="font-size: large">For business inquires, please email <a href = "mailto: itsdabenji@gmail.com">ItsDaBenji@gmail.com</a></p>
+
+                </div>
+            </div> -->
         </div>
 
 
+    </body>
+</html>
 
 
-       <!-- <img src="Assets/Images/WebsiteBanner.png" alt="Logo-Centered" style="width: 1920px; margin-top:-10px; margin-bottom: -20px; margin-left:-10px">
+<!-- Previous verion of portfolio-->
+<!-- <img src="Assets/Images/WebsiteBanner.png" alt="Logo-Centered" style="width: 1920px; margin-top:-10px; margin-bottom: -20px; margin-left:-10px">
 
         <nav>
             <div class="grid-container">
@@ -163,7 +338,3 @@
 
         <img src="Assets/Images/Excited Avatar.png" style="width: 450px; height: 450; margin-top:-100px; max-width:100%;">
         <h1>What's up guys! It's Da Benji<br> I'm an Indie Game Developer</h1>-->
-
-
-    </body>
-</html>
