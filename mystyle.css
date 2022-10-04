@@ -305,21 +305,21 @@ hr
 
 .conclusion
 {
-    display: flex;
+    /* display: flex;
     height: min(20vh);
     width: 1980px;
     margin: -20px;
-    align-items: center;
+    align-items: center; */
 }
 
 .site-intro
 {
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(3, 15%);
     align-items: center;
     justify-content: center;
     margin: auto;
-    padding: 3px;
+    padding: 3px; */
 }
 
 .site-grid
