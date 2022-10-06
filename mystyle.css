@@ -102,6 +102,7 @@ hr
     /* Calculate the total width on the
     basis of number of slides */
     width: 300%;
+    height: 100%;
     
     /* Specify the animation with the
     duration and speed */
@@ -112,10 +113,10 @@ hr
 {
     float: left;
     height: 100%;
-    width: 100%;
+    width: 1000px;
 }
 
-@keyframes slide 
+ @keyframes slide 
 {
     
     /* Calculate the margin-left for
@@ -144,7 +145,7 @@ hr
         margin-left: -200%;
     }
     
-}
+} 
 
 .slide-label
 {
