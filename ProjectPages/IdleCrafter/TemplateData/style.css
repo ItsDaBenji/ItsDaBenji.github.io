@@ -1,6 +1,45 @@
-body { padding: 0; margin: 0 }
+body 
+{ 
+    padding: 0; 
+    margin: 0;
+    background-color: #c77d2d;
+    font-family: Arial, Helvetica, Sans-serif;
+    font-size: 20px;
+    line-height: 1.5em;
+}
+
+.content
+{
+    background-color: #d8954f;
+    box-shadow: 15px 0px 15px #a4621b, -15px 0px 15px #a4621b;
+    width: 70%;
+    height: 100%;
+    left: 15%;
+    margin: auto;
+    padding-top: 3%;
+    padding-bottom: 1%;
+    position: absolute;
+}
+
+.project-outline
+{
+    position: relative;
+    top: 75%;
+    text-align: center;
+}
+
+.project-title
+{
+
+}
+
+.project-description
+{
+
+}
+
 #unity-container { position: absolute }
-#unity-container.unity-desktop { left: 50%; top: 50%; transform: translate(-50%, -50%) }
+#unity-container.unity-desktop { left: 50%; top: 40%; transform: translate(-50%, -50%) }
 #unity-container.unity-mobile { width: 100%; height: 100% }
 #unity-canvas { background: #231F20 }
 .unity-mobile #unity-canvas { width: 100%; height: 100% }
@@ -8,9 +47,30 @@ body { padding: 0; margin: 0 }
 #unity-logo { width: 154px; height: 130px; background: url('unity-logo-dark.png') no-repeat center }
 #unity-progress-bar-empty { width: 141px; height: 18px; margin-top: 10px; background: url('progress-bar-empty-dark.png') no-repeat center }
 #unity-progress-bar-full { width: 0%; height: 18px; margin-top: 10px; background: url('progress-bar-full-dark.png') no-repeat center }
-#unity-footer { position: relative }
+#unity-footer { position: absolute }
 .unity-mobile #unity-footer { display: none }
 #unity-webgl-logo { float:left; width: 204px; height: 38px; background: url('webgl-logo.png') no-repeat center }
 #unity-build-title { float: right; margin-right: 10px; line-height: 38px; font-family: arial; font-size: 18px }
 #unity-fullscreen-button { float: right; width: 38px; height: 38px; background: url('fullscreen-button.png') no-repeat center }
 #unity-warning { position: absolute; left: 50%; top: 5%; transform: translate(-50%); background: white; padding: 10px; display: none }
+
+
+.logos
+{
+    position: fixed;
+    width: 8%;
+    height: 16%;
+    filter: drop-shadow(12px 12px 3px rgb(68, 68, 68));
+}
+
+.godot-logo
+{top: 6%; left: 3%; filter:grayscale(100%)}
+
+.aseprite-logo
+{top: 6%; right: 3%;}
+
+.unity-logo
+{bottom: 6%; left: 3%;}
+
+.blender-logo
+{bottom: 6%; right: 3%; filter:grayscale(100%)}

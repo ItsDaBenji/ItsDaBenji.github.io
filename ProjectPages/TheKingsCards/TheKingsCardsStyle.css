@@ -1,0 +1,55 @@
+.logos
+{
+    position: fixed;
+    width: 8%;
+    height: 16%;
+    filter: drop-shadow(12px 12px 3px rgb(68, 68, 68));
+}
+
+.godot-logo
+{top: 6%; left: 3%; filter:grayscale(100%)}
+
+.aseprite-logo
+{top: 6%; right: 3%;}
+
+.unity-logo
+{bottom: 6%; left: 3%;}
+
+.blender-logo
+{bottom: 6%; right: 3%; filter:grayscale(100%)}
+
+
+body
+{
+    background-color: rgb(94, 112, 158);
+    font-family: Arial, Helvetica, Sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
+}
+
+.content
+{
+    background-color: #93a7e9;
+    box-shadow: 15px 0px 15px #39517e, -15px 0px 15px #39517e;
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    padding-top: 3%;
+    padding-bottom: 1%;
+    position: relative;
+} 
+
+.project-trailer-container
+{
+    position: relative;
+    width: 75%;
+    margin:auto;
+}
+
+.project-trailer
+{
+    position: relative;
+    width: 100%;
+    margin:auto;
+}
