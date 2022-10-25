@@ -1,0 +1,40 @@
+body
+{
+    background-color: #baa479;
+    font-family: Arial, Helvetica, Sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
+}
+
+.content
+{
+    background-color: #e1d0ac;
+    box-shadow: 15px 0px 15px #9b8353, -15px 0px 15px #9b8353;
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    padding-top: 3%;
+    padding-bottom: 1%;
+    position: relative;
+}
+
+.logos
+{
+    position: fixed;
+    width: 8%;
+    height: 16%;
+    filter: drop-shadow(12px 12px 3px rgb(68, 68, 68));
+}
+
+.godot-logo
+{top: 6%; left: 3%; filter:brightness(0%) opacity(40%) grayscale(50%) blur(3px) drop-shadow(4px 4px 3px #FFFFFF);}
+
+.aseprite-logo
+{top: 6%; right: 3%; filter:brightness(0%) opacity(40%) grayscale(50%) blur(3px) drop-shadow(4px 4px 3px #FFFFFF);}
+
+.unity-logo
+{bottom: 6%; left: 3%;}
+
+.blender-logo
+{bottom: 6%; right: 3%;}
