@@ -85,6 +85,8 @@ hr
     right: 3%;
 }
 
+
+
 .slide-show
 {
     border: inset 20px #7cc2df;
@@ -104,7 +106,7 @@ hr
     /* Calculate the total width on the
     basis of number of slides */
     height: 100%;
-    width: 300%;
+    width: 303%;
     
     /* Specify the animation with the
     duration and speed */
@@ -132,20 +134,20 @@ hr
 
     30%
     {
-        margin-left: -105%;
+        margin-left: -100%;
     }
 
     55%
     {
-        margin-left: -105%;
+        margin-left: -100%;
     }
     60%
     {
-        margin-left: -210%;
+        margin-left: -200%;
     }
     95% 
     {
-        margin-left: -210%;
+        margin-left: -200%;
     }
     
 } 

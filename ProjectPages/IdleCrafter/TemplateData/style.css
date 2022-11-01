@@ -34,7 +34,8 @@ body
 
 .project-description
 {
-
+    width: 80%;
+    margin: auto;
 }
 
 .project-gif
