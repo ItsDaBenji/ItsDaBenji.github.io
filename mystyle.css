@@ -87,24 +87,24 @@ hr
 
 .slide-show
 {
-    overflow: hidden;
-    width: 80%;
-    height: 80%;
-    margin: auto;
     border: inset 20px #7cc2df;
     border-radius: 20px;
     margin-bottom: 20px;
     box-shadow: 15px 15px 10px #6c93b200;
+    overflow: hidden;
     scale: 1;
     transition: 0.3s;
+    margin: auto;
+    width: 80%;
+    height: 80%;
 }
 
 .slide-wrapper
 {
     /* Calculate the total width on the
     basis of number of slides */
-    width: 300%;
     height: 100%;
+    width: 300%;
     
     /* Specify the animation with the
     duration and speed */
@@ -113,9 +113,10 @@ hr
 
 .slide
 {
+    grid-area: slide;
     float: left;
+    width: 33%;
     height: 100%;
-    width: 1000px;
 }
 
  @keyframes slide 
@@ -131,20 +132,20 @@ hr
 
     30%
     {
-        margin-left: -100%;
+        margin-left: -105%;
     }
 
     55%
     {
-        margin-left: -100%;
+        margin-left: -105%;
     }
     60%
     {
-        margin-left: -200%;
+        margin-left: -210%;
     }
     95% 
     {
-        margin-left: -200%;
+        margin-left: -210%;
     }
     
 } 

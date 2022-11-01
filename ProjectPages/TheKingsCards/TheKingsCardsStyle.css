@@ -23,7 +23,7 @@ body
 {
     background-color: rgb(103, 126, 147);
     font-family: Arial, Helvetica, Sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.6em;
     margin: 0;
 }
@@ -53,4 +53,63 @@ body
     width: 100%;
     margin:auto;
     box-shadow: 15px 0px 15px #4f6b9e, -15px 0px 15px #4f6b9e;
+}
+
+.project-outline
+{
+    position: relative;
+    text-align: center;
+}
+
+.project-title
+{
+
+}
+
+.project-description
+{
+    width: 80%;
+    margin: auto;
+}
+
+.game-link
+{
+    background-color: #5bba5b;
+}
+
+.project-gif
+{
+    grid-area: gif;
+    float:right;
+}
+
+.project-note
+{
+    grid-area: note;
+    float:left;
+}
+
+.project-grid
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    align-items: center;
+    justify-content: space-around;
+    display: grid;
+    grid: 
+    'note gif'
+    'note gif'
+    'note gif';
+    gap: 5%;
+}
+
+.team-link a:link
+{
+    text-decoration: none;
+    color:#3592d5
+}
+.team-link a:visited
+{
+    text-decoration: none;
+    color:#3592d5
 }

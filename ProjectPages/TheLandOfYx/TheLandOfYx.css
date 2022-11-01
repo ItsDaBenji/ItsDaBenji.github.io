@@ -2,7 +2,7 @@ body
 {
     background-color: #baa479;
     font-family: Arial, Helvetica, Sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.6em;
     margin: 0;
 }
@@ -38,3 +38,53 @@ body
 
 .blender-logo
 {bottom: 6%; right: 3%;}
+
+.project-outline
+{
+    position: relative;
+    text-align: center;
+}
+
+.project-thumbnail
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-title
+{
+
+}
+
+.project-description
+{
+    width: 80%;
+    margin:auto;
+}
+
+.project-gif
+{
+    grid-area: gif;
+    float:right;
+}
+
+.project-note
+{
+    grid-area: note;
+    float:left;
+}
+
+.project-grid
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    align-items: center;
+    justify-content: space-around;
+    display: grid;
+    grid: 
+    'note gif'
+    'note gif'
+    'note gif';
+    gap: 5%;
+}
