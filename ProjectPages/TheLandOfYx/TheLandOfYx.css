@@ -63,6 +63,36 @@ body
     margin:auto;
 }
 
+.credit-link
+{
+    text-decoration: underline;
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+    transition: 0.1s;
+}
+
+.credit-link:hover
+{
+    color: rgb(136, 209, 255);
+    transition: 0.1s;
+}
+
+.play-link
+{
+    display: inline-block;
+    text-decoration: underline;
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+    transition: 0.1s;
+}
+
+.play-link:hover
+{
+    color: rgb(136, 209, 255);
+    font-size: 26px;
+    transition: 0.1s;
+}
+
 .project-gif
 {
     grid-area: gif;

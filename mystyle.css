@@ -97,8 +97,8 @@ hr
     scale: 1;
     transition: 0.3s;
     margin: auto;
-    width: 80%;
-    height: 80%;
+    width: 75%;
+    height: 75%;
 }
 
 .slide-wrapper
@@ -196,8 +196,8 @@ hr
 
 .introduction
 {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
     margin-top: 5%;
     display: flex;
     justify-content: space-evenly;
@@ -232,6 +232,13 @@ hr
     text-decoration: underline;
     font-size: 22px;
     color: rgb(0, 0, 0);
+    transition: 0.1s;
+}
+
+.credit-link:hover
+{
+    color: rgb(0, 157, 255);
+    transition: 0.1s;
 }
 
 .bio
@@ -365,6 +372,13 @@ hr
 {
     border-radius: 10%;
     transition: 0.3s;
+}
+
+.email
+{
+    text-align: center;
+    font-size:1.6em;
+    margin: 15px;
 }
 
 
