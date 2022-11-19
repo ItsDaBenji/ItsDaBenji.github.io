@@ -137,6 +137,11 @@ hr
     animation: slide 12s ease infinite;
 }
 
+.slide-wrapper:hover
+{
+    animation-play-state: paused;
+}
+
 .slide
 {
     grid-area: slide;
@@ -145,7 +150,7 @@ hr
     height: 100%;
 }
 
- @keyframes slide 
+@keyframes slide 
 {
     
     /* Calculate the margin-left for
