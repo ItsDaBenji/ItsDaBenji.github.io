@@ -40,6 +40,15 @@ body
     position: relative;
 } 
 
+.home-button
+{
+    text-align:center;
+    font-size: 24px;
+    text-decoration: underline;
+    color: black;
+    transition: 0.1s;
+}
+
 .project-trailer-container
 {
     position: relative;
