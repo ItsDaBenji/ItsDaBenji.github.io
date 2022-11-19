@@ -58,13 +58,37 @@ hr
     position: fixed;
     width: 8%;
     height: 16%;
-    filter: drop-shadow(12px 12px 3px rgb(68, 68, 68));
+    filter: drop-shadow(6px 6px 1px rgb(68, 68, 68));
+    scale: 1;
+    transition: 0.1s;
+}
+
+.logos:hover
+{
+    scale: 1.2;
+    filter: drop-shadow(12px 12px 5px rgb(76, 76, 76));
+    transition: 0.1s;
+}
+
+.logos-label
+{
+    position: fixed;
+    text-decoration: none;
+    color: white;
+    text-shadow: black 1px 1px;
+    font-size: 36px;
 }
 
 .godot-logo
 {
     top: 6%;
     left: 3%;
+}
+
+.godot-logo-label
+{
+    top: 22%;
+    left: 4.4%;
 }
 
 .aseprite-logo
