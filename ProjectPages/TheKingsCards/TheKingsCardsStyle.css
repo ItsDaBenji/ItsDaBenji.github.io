@@ -3,7 +3,16 @@
     position: fixed;
     width: 8%;
     height: 16%;
-    filter: drop-shadow(12px 12px 3px rgb(68, 68, 68));
+    filter: drop-shadow(6px 6px 1px rgb(68, 68, 68));
+    scale: 1;
+    transition: 0.1s;
+}
+
+.logos:hover
+{
+    scale: 1.2;
+    filter: drop-shadow(12px 12px 5px rgb(76, 76, 76));
+    transition: 0.1s;
 }
 
 .godot-logo

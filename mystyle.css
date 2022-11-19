@@ -70,15 +70,6 @@ hr
     transition: 0.1s;
 }
 
-.logos-label
-{
-    position: fixed;
-    text-decoration: none;
-    color: white;
-    text-shadow: black 1px 1px;
-    font-size: 36px;
-}
-
 .godot-logo
 {
     top: 6%;
